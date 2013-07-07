@@ -57,8 +57,8 @@ var startup_time = null;
 var spit_verbose_output = false;
 
 cb.settings_choices = [
-    {name: 'goal_1_tokens', label: 'Goal 1 Token Amount', type: 'int', minValue: 1, defaultValue: 200},
-	{name: 'goal_1_description', label: 'Goal 1 Description', type: 'str', minLength: 1, maxLength: 255},
+    {name: 'goal_1_tokens', label: 'Goal 1 Token Amount', type: 'int', minValue: 10, maxValue: 1000, defaultValue: 200},
+	{name: 'goal_1_description', label: 'Goal 1 Description', type: 'str', minLength: 6, maxLength: 10},
 	{name: 'goal_2_tokens', label: 'Goal 2 Token Amount', type: 'int', minValue: 1, defaultValue: 200, required: false},
 	{name: 'goal_2_description', label: 'Goal 2 Description', type: 'str', minLength: 0, maxLength: 255, required: false},
 	{name: 'goal_3_tokens', label: 'Goal 3 Token Amount', type: 'int', minValue: 1, defaultValue: 200, required: false},
